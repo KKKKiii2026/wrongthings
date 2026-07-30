@@ -28,10 +28,18 @@ body {
   border-radius: 6px;
   padding: 3px 10px;
   font-size: 13px;
-  margin: 2px 4px 2px 0;
   color: #555;
   border: 1px solid #e0e0e0;
   letter-spacing: 0.3px;
+}
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 12px;
+  justify-content: flex-start;
+}
+.tag-row .tag {
+  margin: 0;
 }
 
 h1 { font-size: 30px; margin-bottom: 2px; }
@@ -259,7 +267,7 @@ h1 { font-size: 30px; margin-bottom: 2px; }
   .subtitle { font-size: 13px; }
   .section-title { font-size: 16px; }
   .section-sub { font-size: 15px; }
-  .tag { font-size: 12px; padding: 2px 6px; margin: 1px 2px 1px 0; }
+  .tag { font-size: 12px; padding: 2px 6px; }
   .case-inline a { width: calc(33.33% - 4px); min-width: 0; font-size: 12px; padding: 6px 2px; }
   .inline-items a, .inline-items span { width: calc(50% - 4px); min-width: 0; font-size: 13px; padding: 6px 4px; }
   .case-highlight a { font-size: 13px; padding: 8px; display: block; }
@@ -267,13 +275,12 @@ h1 { font-size: 30px; margin-bottom: 2px; }
   .style-box { font-size: 13px; padding: 10px; }
   .feedback-item { font-size: 13px; padding: 8px 12px; }
   .item { font-size: 14px; }
-  .item-num { font-size: 14px; }
+  .item-num { font-size: 12px; }
   .badge { font-size: 14px; }
   .side-cta { font-size: 14px; padding: 10px 14px; }
   .cta-bottom { font-size: 14px; padding: 10px; }
   .footer { font-size: 12px; }
-  .tag-row { display: flex; flex-wrap: wrap; gap: 4px; }
-  .tag-row .tag { margin: 0; }
+  .tag-row { gap: 8px 10px; }
 }
 
 </style>
@@ -284,13 +291,13 @@ h1 { font-size: 30px; margin-bottom: 2px; }
 <h1>wrongthings</h1>
 <div class="subtitle">星盘 · 八字 · 命理</div>
 
-<p style="margin:10px 0 6px;">
+<div class="tag-row" style="margin:10px 0 6px;">
 <span class="tag tag-purple">#讨厌假大空</span>
 <span class="tag tag-blue">#真实力不怕实战</span>
 <span class="tag tag-red">#敢晒全部反馈</span>
 <span class="tag tag-green">#技术持续精进</span>
 <span class="tag tag-orange">#翻车也敢发</span>
-</p>
+</div>
 
 <p style="font-size:16px;font-weight:600;color:#444;margin:0;">快速认识我：</p>
 
