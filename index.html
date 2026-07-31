@@ -55,6 +55,13 @@ body {
 
 h1 { font-size: 30px; margin-bottom: 2px; }
 .subtitle { color: #999; font-size: 13px; margin-bottom: 8px; }
+.header-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
 
 /* 侧边咨询栏 */
 .side-cta {
@@ -87,6 +94,28 @@ h1 { font-size: 30px; margin-bottom: 2px; }
   font-weight: 600;
   margin: 18px 0 8px;
   color: #444;
+}
+.section-divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #999;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 28px 0 16px;
+  white-space: nowrap;
+}
+.section-divider::before,
+.section-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #e0e0e0;
+}
+.section-hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 24px 0 12px;
 }
 .item {
   padding: 6px 0;
@@ -161,6 +190,8 @@ h1 { font-size: 30px; margin-bottom: 2px; }
   border-top: 7px solid transparent; border-bottom: 7px solid transparent;
   border-right: 7px solid #e8f5e9;
 }
+.bubble-left { margin-left: 0; }
+.bubble-right { margin-left: 40%; }
 
 .feedback-item a:hover, .bubble-item a:hover { text-decoration: underline !important; }
 
@@ -327,7 +358,7 @@ h1 { font-size: 30px; margin-bottom: 2px; }
 <body>
 <div class="container">
 
-<h1>wrongthings</h1>
+<img src="729d3f21e95bb7934337a1a6876c7d20.jpg" alt="wrongthings" class="header-img">
 <div class="subtitle">星盘 · 八字 · 命理</div>
 
 <div class="tag-grid" style="margin:10px 0 6px;">
@@ -353,7 +384,7 @@ h1 { font-size: 30px; margin-bottom: 2px; }
 <a href="https://api.weibo.com/chat#/chat" target="_blank" style="color:#fff;text-decoration:none;display:block;">📩 付费咨询请私信</a>
 </div>
 <!-- ============================================ -->
-<div class="section-title" style="border-left:none;text-align:center;font-size:15px;font-weight:600;color:#999;margin:24px 0 16px;padding-left:0;">─ ─ ─ ─ 反馈合集 ─ ─ ─ ─</div>
+<div class="section-divider">反馈合集</div>
 <!-- ============================================ -->
 
 <div class="section-sub">1. 考公考研篇反馈</div>
@@ -418,7 +449,7 @@ h1 { font-size: 30px; margin-bottom: 2px; }
   <a href="https://weibo.com/7883934772/PkKQIlHt5" target="_blank">⭐ 推运反馈 · 从头截到尾</a>
 </div>
 
-<div style="border-top:1px solid #eee;margin:24px 0 12px;"></div>
+<div class="section-hr"></div>
 <div class="section-sub">4. 反馈集合 <span style="color:#2e7d32;font-weight:600;font-size:12px;">量大管饱</span></div>
 <div class="feedback-grid">
   <div class="feedback-col">
@@ -459,7 +490,7 @@ h1 { font-size: 30px; margin-bottom: 2px; }
   <a href="https://weibo.com/7883934772/Qdfk5rLVb" target="_blank">客户上岸喜讯</a>
 </div>
 
-<div style="border-top:1px solid #eee;margin:24px 0 12px;"></div>
+<div class="section-hr"></div>
 <div class="section-sub">7. 名人验证</div>
 
 <div class="feedback-item"><a href="https://weibo.com/7883934772/O2ImQhCab" target="_blank" style="color:#333;text-decoration:none;"><b>刘诗诗 · 事业运应验</b></a> <a href="https://weibo.com/7883934772/O2RBMv4Kp" target="_blank" style="color:#666;text-decoration:none;">【补充链接2】</a></div>
@@ -467,17 +498,17 @@ h1 { font-size: 30px; margin-bottom: 2px; }
 
 <div class="section-sub">8. 客户评价 <span style="color:#2e7d32;font-weight:600;font-size:12px;">点击可跳转链接</span></div>
 
-<div class="bubble-item bubble-white" style="margin-left:0;"><a href="https://weibo.com/7883934772/R2UgD5TgH" target="_blank" style="color:#333;text-decoration:none;">"比老公还了解他老婆"</a></div>
-<div class="bubble-item bubble-green" style="margin-left:18%;"><a href="https://weibo.com/7883934772/QlrPFgRYj" target="_blank" style="color:#333;text-decoration:none;">客户评价很准</a></div>
-<div class="bubble-item bubble-white" style="margin-left:3%;"><a href="https://weibo.com/7883934772/Q4Q9u3OiY" target="_blank" style="color:#333;text-decoration:none;">细节太准</a></div>
-<div class="bubble-item bubble-green" style="margin-left:25%;"><a href="https://weibo.com/7883934772/Q4Q9u3OiY" target="_blank" style="color:#333;text-decoration:none;">客户全肯定</a></div>
-<div class="bubble-item bubble-white" style="margin-left:6%;"><a href="https://weibo.com/7883934772/QeKMN7MAp" target="_blank" style="color:#333;text-decoration:none;">现状严丝合缝卡上</a></div>
-<div class="bubble-item bubble-white" style="margin-left:22%;"><a href="https://weibo.com/7883934772/Q3KjYrXov" target="_blank" style="color:#333;text-decoration:none;">客户确认出生时间验证正确</a></div>
-<div class="bubble-item bubble-white" style="margin-left:2%;"><a href="https://weibo.com/7883934772/PwMGdx79v" target="_blank" style="color:#333;text-decoration:none;">客户评价信息量大,敢给结论说的极准</a></div>
-<div class="section-title" style="border-left:none;text-align:center;font-size:15px;font-weight:600;color:#999;margin:24px 0 16px;padding-left:0;">─ ─ ─ ─ 案例分析 ─ ─ ─ ─</div>
+<div class="bubble-item bubble-white bubble-left"><a href="https://weibo.com/7883934772/R2UgD5TgH" target="_blank" style="color:#333;text-decoration:none;">"比老公还了解他老婆"</a></div>
+<div class="bubble-item bubble-green bubble-right"><a href="https://weibo.com/7883934772/QlrPFgRYj" target="_blank" style="color:#333;text-decoration:none;">客户评价很准</a></div>
+<div class="bubble-item bubble-white bubble-left"><a href="https://weibo.com/7883934772/Q4Q9u3OiY" target="_blank" style="color:#333;text-decoration:none;">细节太准</a></div>
+<div class="bubble-item bubble-green bubble-right"><a href="https://weibo.com/7883934772/Q4Q9u3OiY" target="_blank" style="color:#333;text-decoration:none;">客户全肯定</a></div>
+<div class="bubble-item bubble-white bubble-left"><a href="https://weibo.com/7883934772/QeKMN7MAp" target="_blank" style="color:#333;text-decoration:none;">现状严丝合缝卡上</a></div>
+<div class="bubble-item bubble-white bubble-right"><a href="https://weibo.com/7883934772/Q3KjYrXov" target="_blank" style="color:#333;text-decoration:none;">客户确认出生时间验证正确</a></div>
+<div class="bubble-item bubble-white bubble-left"><a href="https://weibo.com/7883934772/PwMGdx79v" target="_blank" style="color:#333;text-decoration:none;">客户评价信息量大,敢给结论说的极准</a></div>
+<div class="section-divider">案例分析</div>
 <!-- ============================================ -->
 
-<div class="section-sub">1. 趣味讨论</div>
+<div class="section-sub">趣味讨论</div>
 
 <div class="item"><span class="item-num">1</span><a href="https://weibo.com/7883934772/QgJn9pFBN" target="_blank">找不到工作？星盘教你三招提升"求职运"</a></div>
 <div class="item"><span class="item-num">2</span><a href="https://weibo.com/7883934772/QipPRteWj" target="_blank">家族遗传病怎么看？星盘里这个配置最要警惕</a></div>
@@ -498,7 +529,7 @@ h1 { font-size: 30px; margin-bottom: 2px; }
 <div class="item"><span class="item-num">17</span><a href="https://weibo.com/7883934772/O0LqMzV9i" target="_blank">刘诗诗被说"眼睛无神"的真相——八字里写得明明白白</a> <a href="https://weibo.com/7883934772/O2ImQhCab" target="_blank">[补充链接]</a></div>
 <div class="item"><span class="item-num">18</span><a href="https://weibo.com/7883934772/QDohT72LQ" target="_blank">太阳12宫/12R怎么断？网上瞎扯的太多，真正关键的其实就这几点</a></div>
 <div class="item"><span class="item-num">19</span><a href="https://weibo.com/7883934772/P0H28jhuO" target="_blank">李庚希三辰冲一戌，两气成像格土旺生金——这种八字家里非富即贵</a> <a href="https://weibo.com/7883934772/P0GUjhmUg" target="_blank">[补充链接]</a></div>
-	<div class="section-sub">2. 八字篇</div>
+	<div class="section-sub">八字篇</div>
 
 <div class="item"><span class="item-num">20</span><a href="https://weibo.com/7883934772/5295934972821600" target="_blank">14个四同八字命运不同，星盘如何解释其中的差异？</a></div>
 <div class="item"><span class="item-num">21</span><a href="https://weibo.com/7883934772/Q66ddnyhi" target="_blank">为什么比劫多了"不贵"？</a></div>
@@ -510,7 +541,7 @@ h1 { font-size: 30px; margin-bottom: 2px; }
 <div class="item"><span class="item-num">26</span><a href="https://weibo.com/7883934772/Qh8Pk63iC" target="_blank">总是遇到短命恋情的八字，长什么样？</a></div>
 <div class="item"><span class="item-num">27</span><a href="https://weibo.com/7883934772/PoAQY5KmV" target="_blank">为什么有些女生总找到"穷老公"？</a></div>
 
-<div class="section-sub">3. 星盘专业技法</div>
+<div class="section-sub">星盘专业技法</div>
 
 <div class="item"><span class="item-num">28</span><a href="https://weibo.com/7883934772/5236918183723122" target="_blank">实例讲解：宫位叠加综合取象技法</a></div>
 <div class="item"><span class="item-num">29</span><a href="https://weibo.com/7883934772/5205065068642368" target="_blank">互联网大厂中层都是什么样的配置</a></div>
@@ -541,7 +572,7 @@ h1 { font-size: 30px; margin-bottom: 2px; }
 
 
 
-<div class="section-title" style="font-size:16px;">关于我</div>
+<div class="section-divider">关于我</div>
 
 <div style="font-size:14px;line-height:2;">
 ✓ 不看虚的，敢给结论<br>
