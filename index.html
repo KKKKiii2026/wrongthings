@@ -33,6 +33,25 @@ body {
   border: 1px solid #e0e0e0;
   letter-spacing: 0.3px;
 }
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 12px;
+  justify-content: flex-start;
+}
+.tag-row .tag {
+  margin: 0;
+}
+.tag-grid {
+  display: grid;
+  grid-template-columns: max-content max-content max-content;
+  column-gap: 20px;
+  row-gap: 10px;
+  justify-content: start;
+}
+.tag-grid .tag {
+  margin: 0;
+}
 
 h1 { font-size: 30px; margin-bottom: 2px; }
 .subtitle { color: #999; font-size: 13px; margin-bottom: 8px; }
@@ -252,6 +271,53 @@ h1 { font-size: 30px; margin-bottom: 2px; }
   width: calc(25% - 6px);
   min-width: 70px;
 }
+.feedback-grid {
+  display: flex;
+  gap: 12px;
+  margin: 8px 0;
+}
+.feedback-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.feedback-col a {
+  display: block;
+  font-size: 13px;
+  color: #333;
+  text-decoration: none;
+  padding: 4px 2px;
+  background: #f5f5f5;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  body { padding: 8px; }
+  .container { padding: 16px 10px; border-radius: 8px; }
+  h1 { font-size: 24px; }
+  .subtitle { font-size: 13px; }
+  .section-title { font-size: 16px; }
+  .section-sub { font-size: 15px; }
+  .tag { font-size: 12px; padding: 2px 6px; }
+  .case-inline a { width: calc(33.33% - 4px); min-width: 0; font-size: 13px; padding: 6px 2px; }
+  .inline-items a, .inline-items span { width: calc(50% - 4px); min-width: 0; font-size: 13px; padding: 6px 4px; }
+  .case-highlight a { font-size: 14px; padding: 8px; display: block; }
+  .bubble-item { font-size: 14px; padding: 8px 12px; margin-left: 2% !important; }
+  .style-box { font-size: 14px; padding: 10px; }
+  .feedback-item { font-size: 14px; padding: 8px 12px; }
+  .item { font-size: 15px; }
+  .item-num { font-size: 12px; }
+  .badge { font-size: 14px; }
+  .side-cta { font-size: 14px; padding: 10px 14px; }
+  .cta-bottom { font-size: 14px; padding: 10px; }
+  .footer { font-size: 12px; }
+  .tag-grid { gap: 8px 10px; }
+  .feedback-grid { gap: 8px; }
+  .feedback-col { gap: 6px; }
+  .feedback-col a { font-size: 13px; padding: 6px 2px; }
+}
 </style>
 </head>
 <body>
@@ -260,13 +326,13 @@ h1 { font-size: 30px; margin-bottom: 2px; }
 <h1>wrongthings</h1>
 <div class="subtitle">星盘 · 八字 · 命理</div>
 
-<p style="margin:10px 0 6px;">
+<div class="tag-grid" style="margin:10px 0 6px;">
 <span class="tag tag-purple">#讨厌假大空</span>
 <span class="tag tag-blue">#真实力不怕实战</span>
 <span class="tag tag-red">#敢晒全部反馈</span>
 <span class="tag tag-green">#技术持续精进</span>
 <span class="tag tag-orange">#翻车也敢发</span>
-</p>
+</div>
 
 <p style="font-size:16px;font-weight:600;color:#444;margin:0;">快速认识我：</p>
 
@@ -350,28 +416,32 @@ h1 { font-size: 30px; margin-bottom: 2px; }
 
 <div style="border-top:1px solid #eee;margin:24px 0 12px;"></div>
 <div class="section-sub">4. 反馈集合 <span style="color:#2e7d32;font-weight:600;font-size:12px;">量大管饱</span></div>
-<div class="inline-items">
-  <a href="https://weibo.com/7883934772/QCVueizxO" target="_blank"><b>各种反馈集合</b></a>
-  <a href="https://weibo.com/7883934772/PubTqge2E" target="_blank"><b>工作状况及要不要转行</b></a>
-  <a href="https://weibo.com/7883934772/PnxAX7pVN" target="_blank"><b>工作盘大量反馈合集</b></a>
-  <a href="https://weibo.com/7883934772/PmFs29V7u" target="_blank"><b>学业+感情综合反馈</b></a>
-  <a href="https://weibo.com/7883934772/Pg7WoAG22" target="_blank"><b>超长反馈 · 学业家庭事业</b></a>
-  <a href="https://weibo.com/7883934772/P4yFno0z6" target="_blank"><b>超长反馈 · 不挑着截</b></a>
-  <a href="https://weibo.com/7883934772/P3NKwtThp" target="_blank"><b>长反馈+干货分析</b></a>
-  <a href="https://weibo.com/7883934772/Pvtaqhlpp" target="_blank"><b>长截图准确率复盘</b></a>
-  <a href="https://weibo.com/7883934772/PiMPbuZpQ" target="_blank"><b>从初中/高中到现在逐段验证</b></a>
+<div class="feedback-grid">
+  <div class="feedback-col">
+    <a href="https://weibo.com/7883934772/QCVueizxO" target="_blank"><b>各种反馈集合</b></a>
+    <a href="https://weibo.com/7883934772/Pvtaqhlpp" target="_blank"><b>长截图准确率复盘</b></a>
+    <a href="https://weibo.com/7883934772/PmFs29V7u" target="_blank"><b>学业+感情综合反馈</b></a>
+    <a href="https://weibo.com/7883934772/P4yFno0z6" target="_blank"><b>超长反馈 · 不挑着截</b></a>
+    <a href="https://weibo.com/7883934772/PiMPbuZpQ" target="_blank"><b>从初中/高中到现在逐段验证</b></a>
+  </div>
+  <div class="feedback-col">
+    <a href="https://weibo.com/7883934772/P3NKwtThp" target="_blank"><b>长反馈+干货分析</b></a>
+    <a href="https://weibo.com/7883934772/PnxAX7pVN" target="_blank"><b>工作盘大量反馈合集</b></a>
+    <a href="https://weibo.com/7883934772/PubTqge2E" target="_blank"><b>工作状况及要不要转行</b></a>
+    <a href="https://weibo.com/7883934772/Pg7WoAG22" target="_blank"><b>超长反馈 · 学业家庭事业</b></a>
+  </div>
 </div>
 
 <div style="margin:4px 0;"></div>
 <div class="section-sub" style="margin:10px 0 4px;">5. 其他验证</div>
 
 <div class="inline-items">
-  <a href="https://weibo.com/7883934772/PcjOjbfHH" target="_blank">事业盘：单干还是打工</a>
-  <a href="https://weibo.com/7883934772/PmY7frHv6" target="_blank">学历断准 · 大专vs本科</a>
   <a href="https://weibo.com/7883934772/P3DPUbN4C" target="_blank">分手预言应验</a>
   <a href="https://weibo.com/7883934772/P3SsQcAgL" target="_blank">分手预言应验②</a>
   <a href="https://weibo.com/7883934772/Qc03E7S9B" target="_blank">奇门遁甲验证自己</a>
   <a href="https://weibo.com/7883934772/PmYiDF9ev" target="_blank">深度复盘：睡眠感情取象</a>
+  <a href="https://weibo.com/7883934772/PcjOjbfHH" target="_blank">事业盘：单干还是打工</a>
+  <a href="https://weibo.com/7883934772/PmY7frHv6" target="_blank">学历断准 · 大专vs本科</a>
   <a href="https://weibo.com/7883934772/Q3KjYrXov" target="_blank">出生时间验证</a>
 </div>
 
@@ -416,13 +486,13 @@ h1 { font-size: 30px; margin-bottom: 2px; }
 <div class="item"><span class="item-num">9</span><a href="https://weibo.com/7883934772/QDohT72LQ" target="_blank">太阳12宫/12R怎么断？网上瞎扯的太多，真正关键的其实就这几点</a></div>
 <div class="item"><span class="item-num">10</span><a href="https://weibo.com/7883934772/QDodGxPjm" target="_blank">星盘里的"暗线"：为什么有人明面上没帮你，背地里却在使劲？</a></div>
 <div class="item"><span class="item-num">11</span><a href="https://weibo.com/7883934772/Q26XfbPvI" target="_blank">学神靠天赋，学霸靠拼命——星盘里写得清清楚楚</a></div>
-<div class="item"><span class="item-num">12</span><a href="https://weibo.com/7883934772/PCqdy94Hr" target="_blank">土星≠倒霉！星盘中土星好的人，都是长期主义者</a> <a href="https://weibo.com/7883934772/PFbcxbWAC" target="_blank">[补充链接]</a></div>
+<div class="item"><span class="item-num">12</span><a href="https://weibo.com/7883934772/PCqdy94Hr" target="_blank">土星≠倒霉！星盘中土星好的人，都是长期主义者</a><br><a href="https://weibo.com/7883934772/PFbcxbWAC" target="_blank">[补充链接]</a></div>
 <div class="item"><span class="item-num">13</span><a href="https://weibo.com/7883934772/Q26XfbPvI" target="_blank">从尸山血海厮杀出来的断层顶级学霸，星盘里的火土是怎么发用的</a></div>
 <div class="item"><span class="item-num">14</span><a href="https://weibo.com/7883934772/Qxe6jxNFm" target="_blank">星体全入庙就是好命？看完这个案例你再想想</a></div>
 <div class="item"><span class="item-num">15</span><a href="https://weibo.com/7883934772/O2RWh0ttA" target="_blank">王诗龄的命到底有多好？星盘拆解真正的"富贵花"配置</a></div>
 <div class="item"><span class="item-num">16</span><a href="https://weibo.com/7883934772/P0H28jhuO" target="_blank">李庚希三辰冲一戌，两气成像格土旺生金——这种八字家里非富即贵</a> <a href="https://weibo.com/7883934772/P0GUjhmUg" target="_blank">[补充链接]</a></div>
 <div class="item"><span class="item-num">17</span><a href="https://weibo.com/7883934772/O0LqMzV9i" target="_blank">刘诗诗被说"眼睛无神"的真相——八字里写得明明白白</a> <a href="https://weibo.com/7883934772/O2ImQhCab" target="_blank">[补充链接]</a></div>
-<div class="item"><span class="item-num">18</span><a href="https://weibo.com/7883934772/P3SYlfQMv" target="_blank">迪丽热巴为什么总是腥风血雨？顶流星盘的必经之路</a> <a href="https://weibo.com/7883934772/NxS1fhFoa" target="_blank">[补充链接]</a></div>
+<div class="item"><span class="item-num">18</span><a href="https://weibo.com/7883934772/P3SYlfQMv" target="_blank">迪丽热巴为什么总是腥风血雨？顶流星盘的必经之路</a><br><a href="https://weibo.com/7883934772/NxS1fhFoa" target="_blank">[补充链接]</a></div>
 <div class="item"><span class="item-num">19</span><a href="https://weibo.com/7883934772/5147789034717215" target="_blank">嫁给"优质男"就幸福了？看不见的代价你想不到</a></div>
 <div class="item"><span class="item-num">20</span><a href="https://weibo.com/7883934772/R1xlQf5qR" target="_blank">什么样的配置最容易出轨？一个教科书级案例告诉你</a></div>
 <div class="item"><span class="item-num">21</span><a href="https://weibo.com/7883934772/O4kERauz2" target="_blank">小布什的星盘：金木互容的顶级二代到底赢在哪</a></div>
