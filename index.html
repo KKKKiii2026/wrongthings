@@ -31,6 +31,7 @@ body {
   color: #555;
   border: 1px solid #e0e0e0;
   letter-spacing: 0.3px;
+  text-align: center;
 }
 .tag-row {
   display: flex;
@@ -42,11 +43,11 @@ body {
   margin: 0;
 }
 .tag-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: max-content max-content max-content;
   column-gap: 20px;
   row-gap: 10px;
+  justify-content: start;
 }
 .tag-grid .tag {
   margin: 0;
